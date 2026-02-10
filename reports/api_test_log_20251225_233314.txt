@@ -1,0 +1,20 @@
+[2025-12-25 23:33:14] === AutomationExercise API Testing (Python) ===
+[2025-12-25 23:33:14] Base URL: https://automationexercise.com
+[2025-12-25 23:33:14] Test user: fazli_test_2aca8d7d@example.com
+[2025-12-25 23:33:16] PASS - API 1 - GET /api/productsList returns products - 200 OK; products[] present
+[2025-12-25 23:33:17] PASS - API 2 - POST /api/productsList not supported (negative) - Status 200; 405 not supported
+[2025-12-25 23:33:17] PASS - API 3 - GET /api/brandsList returns brands - 200 OK; brands[] present
+[2025-12-25 23:33:17] PASS - API 4 - PUT /api/brandsList not supported (negative) - Status 200; 405 not supported
+[2025-12-25 23:33:18] PASS - API 5 - POST /api/searchProduct with parameter returns results - 200 OK; products[] present
+[2025-12-25 23:33:18] PASS - API 6 - POST /api/searchProduct without parameter returns error (negative) - HTTP 200; 400 missing param
+[2025-12-25 23:33:19] PASS - API 11 - POST /api/createAccount creates user - HTTP 200; User created
+[2025-12-25 23:33:19] PASS - API 7 - POST /api/verifyLogin valid credentials - 200 OK; User exists
+[2025-12-25 23:33:20] PASS - API 10 - POST /api/verifyLogin invalid credentials (negative) - HTTP 200; User not found
+[2025-12-25 23:33:20] PASS - API 8 - POST /api/verifyLogin missing email (negative) - HTTP 200; 400 missing param
+[2025-12-25 23:33:21] PASS - API 9 - DELETE /api/verifyLogin not supported (negative) - HTTP 200; 405 not supported
+[2025-12-25 23:33:21] PASS - API 14 - GET /api/getUserDetailByEmail returns details - 200 OK; User detail present
+[2025-12-25 23:33:21] PASS - API 13 - PUT /api/updateAccount updates user - HTTP 200; User updated
+[2025-12-25 23:33:22] PASS - API 12 - DELETE /api/deleteAccount deletes user (cleanup) - 200 OK; Account deleted
+[2025-12-25 23:33:22] === SUMMARY ===
+[2025-12-25 23:33:22] Total: 14 | Passed: 14 | Failed: 0
+[2025-12-25 23:33:22] All tests passed ✅
